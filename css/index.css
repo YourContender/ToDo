@@ -1,0 +1,110 @@
+:root {
+    --color-white: #FFF;
+    --color-blue:  #9d97bd;
+    --color-dark:  #000;
+
+    --bg-color-light-gray: rgba(233, 217, 217, .2);
+    --bg-color-black:      rgba(0, 0, 0, .65);
+    --bg-color-gray:       rgba(139, 131, 131, 0.85);
+    --bg-color-blue:       rgba(195, 175, 233, 0.85);
+    --bg-color-red:        rgba(216, 114, 114, 0.85);
+
+    --spacing-small: 10px;
+    --spacing-medium: 15px;
+    --spacing-large: 30px;
+
+    --margin-medium: 35px;
+    --margin-large: 50px;
+
+    --border-radius: 5px;
+
+    --font-bold: 600;
+    --font-size-medium: 16px;
+
+    --transition: .4s;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 850px;
+    min-height: 650px;
+    text-align: center;
+    padding-top: var(--spacing-large);
+    padding-left: var(--spacing-medium);
+    margin-top: var(--margin-large);
+    background-color: var(--bg-color-light-gray);
+    border-radius: var(--border-radius);
+}
+
+.container__input {
+    background-color: var(--bg-color-gray);
+    border-radius: var(--border-radius);
+    width: 35%;
+    height: var(--spacing-large);
+}
+
+.container__btn {
+    margin-left: 10px;
+    min-width: 50px;
+    min-height: 35px;
+    border-radius: var(--border-radius);
+    background: none;
+    color: var(--color-white);
+    outline: none;
+    font-weight: var(--font-bold);
+    border: 2px solid var(--color-white);
+}
+
+.container__btn:hover {
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
+    transition: var(--transition);
+}
+
+.container__btn:active {
+    border: 2px solid var(--color-blue);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    font-weight: var(--font-bold);
+    transition: var(--transition);
+}
+
+.container__ul{
+    margin: auto;
+    padding: 0;
+    max-width: 500px; 
+    list-style-type: none;  
+    margin-top: var(--margin-medium);
+}
+
+.li__item {
+    text-align: left;
+    font-size: var(--font-size-medium);
+    margin-top: var(--spacing-small);
+    padding: 15px 10px 15px 5px;
+    text-transform: none;
+    text-decoration: none;
+    background-color: var(--bg-color-blue);
+    border-radius: var(--border-radius);
+}
+
+.btn__item {
+    margin-top: 0;
+    padding: 0;
+    float: right;
+    background: transparent;
+    border:none;
+    font-size: var(--font-size-medium);
+}
+
+.li__click__active {
+    text-decoration: line-through;
+    background-color: var(--bg-color-red);
+}
